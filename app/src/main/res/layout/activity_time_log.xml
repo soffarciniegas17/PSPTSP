@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TimeLog">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Chronometer
+            android:id="@+id/crono"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:background="@color/azul"
+            android:orientation="vertical">
+
+            <Button
+                android:onClick="salir"
+                android:id="@+id/atras"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:background="@drawable/back" />
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Log" />
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="5dp"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pensol" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="234dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp">
+
+
+            </Spinner>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_marginTop="5dp"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+            <Button
+                android:id="@+id/binicio"
+                android:onClick="iniciar"
+                android:layout_width="50dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/turn" />
+
+            <TextView
+                android:id="@+id/inicio"
+                android:layout_width="205dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:hint="Da click en el boton para \n iniciar la fase" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:elevation="5dp">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/interruptions"
+                android:onClick="agregar" />
+
+            <EditText
+                android:id="@+id/tiempomas"
+                android:layout_width="228dp"
+                android:layout_height="81dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/gris"
+                android:hint="Click en el boton para \n agregar interrupcion"
+                android:inputType="number" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+            <Button
+                android:id="@+id/bfinal"
+                android:layout_width="50dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="cerrar"
+                android:background="@drawable/turn" />
+
+            <TextView
+                android:id="@+id/finciclo"
+                android:layout_width="206dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:hint="Da click en el boton para \n detener la fase" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/description" />
+
+            <EditText
+                android:id="@+id/editar"
+                android:layout_width="223dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Agregar comentarios"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:onClick="salir"
+                android:textSize	="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+
+            <TextView
+                android:onClick="guardar"
+                android:textSize="30dp"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

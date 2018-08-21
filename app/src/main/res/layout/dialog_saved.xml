@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:background="@android:color/white"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="470dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+
+        android:background="@color/azul"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cancel" />
+
+        <ImageView
+            android:id="@+id/imagenSaved"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Guardado"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Información guardada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text1"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="PHASE O DATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text2"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="INICIO O TYPE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text3"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:text="FIN  O INJECTED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text4"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="INTERRUPCIONES O REMOVED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text5"
+        android:layout_marginTop="15dp"
+        android:text="DELTA O FIx"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text6"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="COMENTARIOS O SOLUCION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

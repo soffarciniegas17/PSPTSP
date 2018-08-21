@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Splash_Screen">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="194dp"
+        android:layout_height="174dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:text="Personal software process"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

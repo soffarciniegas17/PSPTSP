@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:layout_height="370dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/azul"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+
+        <TextView
+            android:id="@+id/salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_assignment_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/muestra"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:text="TEXTO"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/timelog"
+        android:text="Time Log"
+        android:layout_marginTop="20dp"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/defect"
+        android:text="Defect Log"
+        android:layout_marginTop="10dp"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/sumary"
+        android:layout_marginTop="10dp"
+        android:text="Primary Sumary"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp" />
+
+
+
+</LinearLayout>
